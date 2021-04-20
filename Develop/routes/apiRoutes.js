@@ -3,7 +3,7 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 
 const router = require("express").Router();
-
+const store = require("../db/store");
 router.get("/notes", (req, res) => {
   let notesData = [
     {
